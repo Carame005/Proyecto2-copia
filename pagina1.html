@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+<main>
+    <header class="cabecera">
+        <nav>
+            <ul class="cabecera__lista">
+                <li class="lista__enlace"><a href="pagina1.html">Principal</a></li>
+                <li class="lista__enlace"><a href="pagina2.html">Servicios/productos</a></li>
+                <li class="lista__enlace"><a href="pagina3.html">Contacto</a></li>
+                <li class="lista__enlace"><a href="pagina4.html">Noticias</a></li>
+            </ul>
+        </nav>
+        <article class="cabecera__articulo">
+            <button type="submit" class="articulo__button"></button>
+            <form method="get" action="pagina1.html" class="articulo__form">
+                <label><input type="text" placeholder="Buscar..."></label>
+            </form>
+        </article>
+        <article class="articulo__contenedor">
+            <h2 class="articulo__titulo">EL SONIDO DEL COSMOS</h2>
+            <img src="./images/planet.png" alt="foto" class="articulo__image">
+        </article>
+    </header>
+
+    <section class="fondo">
+        <h1>SEAN BIENVENIDOS A UN VACÍO SIN FIN</h1>
+        <h2>DONDE LAS ESTRELLAS RESUENAN CON EL COSMOS</h2>
+        <a href="#" class="btn-comenzar">COMENZAR</a>
+    </section>
+
+    <section>
+        <h1 class="section__titulo">OPINIONES DE NUESTROS CLIENTES</h1>
+        <div class="image-container__small"> <!-- Este div está puesto adrede para manejar los articles -->
+            <article class="image-container__article">
+            <img src="./images/robin.png" alt="Robin" class="article__image__small">
+            <p>Esta página me recuerda a los viejos tiempos cuando solía cantarle a mi hermano en el escenario.</p>
+            <p class="italic">- Robin, la idol de Colonipenal.</p>
+        </article>
+        <article class="image-container__article">
+            <img src="./images/Rappa.png" alt="Rappa" class="article__image__small">
+            <p>Este lugar está lleno de pergaminos ninja de épocas muy antiguas, son casi tan buenos cómo los míos.</p>
+            <p class="italic">- Rappa, la ninja centelleante.</p>
+        </article>
+        <article class="image-container__article">
+            <img src="./images/Serval.png" alt="Serval" class="article__image__small">
+            <p>Me recuerda al ambiente del bajomundo en Belobog, es nostálgico y encantador a la vez.</p>
+            <p class="italic">- Serval, guitarrista.</p>
+        </article>
+        </div>
+    </section>
+
+    <section class="alter-background white-text">
+        <h1>SOBRE EL CONTENIDO</h1>
+        <div class="image-container__small">
+        <article class="article__image__large">
+                <img src="./images/robin-sing.gif" alt="Robin" >
+                    <p>Esta es una página dirigida a compartir cosas sobre música. Todo lo que verás aquí estará relacionado en mayor o menor medida con la música.</p>
+        </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 El Sonido Del Cosmos. Todos los derechos reservados.</p>
+        <nav class="footer__nav">
+            <a href="#" class="footer__link">Política de privacidad</a> |
+            <a href="#" class="footer__link">Términos y condiciones</a>
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+</main>
+</body>
+</html>

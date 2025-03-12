@@ -1,0 +1,379 @@
+:root {
+    /*Tema claro*/
+    --color-texto: #030303;
+    --color-fondo: #f4f4f4;
+    --color-header-footer: #dec235;
+    --color-alter: #AEADAD;
+    /*Tema oscuro*/
+    --color-fondo-oscuro: #130B4E;
+    --color-header-footer-oscuro: #BABABA;
+    --color-texto-oscuro: #030303;
+    --color-alter-oscuro: #666666;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1, figcaption, a {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center{
+    text-align: center;
+}
+
+.cabecera {
+    background-color: var(--color-header-footer);
+    display: flex;
+    flex-wrap: wrap;
+    height: 4rem;
+    padding: 1rem;
+}
+
+.cabecera__lista {
+    gap: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.lista__enlace {
+    margin: 0.625rem;
+}
+
+.cabecera__articulo {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.articulo__button {
+    margin-right: 0;
+}
+
+.articulo__form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+}
+
+
+.articulo__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0.3125rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.articulo__contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.625rem;
+    margin: 0;
+    padding: 0;
+}
+.articulo__contenedor h2 {
+    margin-right: auto;
+}
+.articulo__contenedor img {
+    max-height: 4rem;
+    width: auto;
+}
+
+.articulo__titulo {
+    color: var(--color-texto);
+    text-align: right;
+    padding: 0.625rem;
+    margin: 0;
+}
+
+.articulo__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    max-width: 100%;
+}
+.article__image__small {
+    width: 80%;
+    max-width: 10rem;
+    height: auto;
+    border-radius: 10px;
+}
+.image-container__small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.image-container__medium {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.image-container__article {
+    flex: 1 1 calc(20% - 10px);
+    max-width: 30%;
+    gap: 1rem;
+    text-align: center;
+}
+.article__image__medium {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.article__image__large {
+    flex: 1 1 100%;
+    max-width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.article__image__large img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+.section__titulo {
+    color: var(--color-texto);
+    max-width: 100%;
+}
+
+.section__titulo__alter {
+    color: var(--color-alter);
+    max-width: 100%;
+}
+
+.fondo {
+    background-image: url('../images/starrysky.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Courier, monospace;
+    color: var(--color-fondo);
+    text-align: center;
+}
+
+figure img {
+    max-width: 33%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.625rem;
+    margin-top: 1.25rem;
+}
+
+hr {
+    border: none;
+    border-top: 0.125rem solid var(--color-fondo);
+    margin: 2.5rem 0;
+    width: 100%;
+}
+
+.btn-comenzar {
+    display: inline-block;
+    background-color: var(--color-header-footer);
+    color: var(--color-texto);
+    font-size: 1.125rem;
+    padding: 0.75rem 1.875rem;
+    border: none;
+    border-radius: 1.5625rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comenzar:hover {
+    background-color: var(--color-texto);
+}
+
+.noticias-container {
+    display: flex;
+    flex-direction: column; /* Alinea las noticias en columnas */
+    gap: 1.5rem; /* Espacio entre noticias */
+    padding: 0 1rem; /* Agrega un poco de padding a los lados para que el texto no esté pegado al borde */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total del contenedor */
+}
+
+
+
+.noticia {
+    display: flex;
+    width: 100%;
+    gap: 1rem; /* Espacio entre la imagen y el texto */
+    align-items: flex-start; /* Alinea los elementos al principio */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si el espacio es pequeño */
+}
+
+
+.noticia__imagen {
+    display: flex;
+    justify-content: center; /* Centra la imagen en su contenedor */
+    align-items: center; /* Centra la imagen dentro del contenedor */
+    gap: 0;
+    margin: 0;
+}
+
+.noticia__image {
+    width: 100%;
+    height: auto; /* Ajusta la altura de la imagen en proporción a su ancho */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien */
+    max-height: 600px; /* Aumenta el tamaño máximo de la imagen */
+    display: block; /* Hace que la imagen no tenga espacios debajo */
+    margin: 0.625rem;
+}
+
+.noticia__texto {
+    flex: 0 0 55%; /* El texto ocupa el 55% del artículo */
+    padding-left: 1rem; /* Agrega un poco de espacio al texto para que no esté pegado al borde */
+    word-wrap: break-word; /* Asegura que el texto largo se ajuste */
+    overflow-wrap: break-word; /* Ayuda a manejar palabras largas */
+    max-width: 100%; /* Evita que el texto se desborde */
+}
+
+.noticia__texto h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.noticia__texto h3 {
+    font-size: 1.125rem;
+    margin: 0.5rem 0;
+}
+
+.noticia__texto .italic {
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.noticia__texto .italic {
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.footer {
+    background-color: var(--color-header-footer);
+    color: var(--color-texto);
+    text-align: center;
+    padding: 1.25rem 0;
+    font-size: 0.875rem;
+}
+
+.footer__nav {
+    margin-top: 0.625rem;
+}
+
+.footer__link {
+    color: var(--color-texto);
+    text-decoration: none;
+    margin: 0 0.625rem;
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: var(--color-alter);
+}
+
+.alter-background{
+    background-color: var(--color-alter-oscuro);
+    color: var(--color-alter);
+    text-align: center;
+}
+
+@media (max-width: 1200px) and (min-width: 780px) {
+    .articulo__contenedor {
+        display: none;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .cabecera {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+    .cabecera__lista {
+        flex-direction: column;
+        padding: 0;
+    }
+    .cabecera__articulo {
+        flex-direction: column; /* Cambia a columna para mejor ajuste */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+        gap: 0.5rem; /* Ajusta el espacio entre elementos */
+    }
+    .articulo__form {
+        width: 100%;
+        justify-content: flex-start; /* Alinea el formulario a la izquierda */
+    }
+    .articulo__button {
+        margin-right: 0.5rem; /* Ajusta el margen derecho para no tocar el formulario */
+    }
+    .articulo__contenedor {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .articulo__contenedor h2 {
+        margin-right: 0;
+    }
+    .image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .noticia {
+        flex-direction: column; /* Cambia a columna para apilar imagen y texto */
+    }
+
+    .noticia__imagen,
+    .noticia__texto {
+        flex: 0 0 100%; /* Ambas ocupan el 100% */
+    }
+
+    .noticia__image {
+        max-height: 250px; /* Asegura que las imágenes no sean demasiado grandes en pantallas pequeñas */
+    }
+
+    .noticia__texto {
+        padding-left: 0; /* Elimina el padding en pantallas pequeñas */
+    }
+}
+@media (max-width: 500px) {
+    .image-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
